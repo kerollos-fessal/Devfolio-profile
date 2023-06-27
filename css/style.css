@@ -1,0 +1,436 @@
+
+
+
+body{
+    background-color: rgb(243, 242, 242);
+}
+
+body:has(.home:target) .home-active{
+    width: 100%;
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+
+
+ body:has(.service:target) .service-active{
+    width: 100%;
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+
+
+ body:has(.about:target) .about-active{
+    width: 100%;
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+
+ body:has(.portfolio:target) .portfolio-active{
+    width: 100%;
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+ body:has(.contact:target) .contact-active{
+    width: 100%;
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+ body:has(.blog:target) .blog-active{
+    width: 100%;
+    color: white;
+    border-bottom: white 2px solid;
+ }
+
+ nav .nav-item{
+    position: relative;
+ }
+
+ nav .nav-item a:after{
+    content: "";
+    position: absolute;
+    bottom: -2px ;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: all 400ms;
+    z-index: 4;
+}
+
+
+nav .nav-item:hover a:after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform-origin: bottom right;
+}
+.dropdown-toggle::after{
+    border: none;
+}
+
+/* HOME SECTION */
+
+
+.cont{
+width: 100%;
+height:122vh;
+background-image: url(../images/hero-bg.jpg);
+background-size: cover;
+background-position:center;
+background-attachment: fixed;
+/* filter: brightness(50%); */
+}
+
+
+
+.cont .layer{
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+
+.cont p{
+    color: white;
+    font-size: 4.5rem;
+}
+
+.cont span::after{
+content:"|";
+animation-name:typing ;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes typing {
+ 0%{content:"D|";}   
+ 2%{content:"De|";}
+ 4%{content:"Des|";}
+ 6%{content:"Desi|";}
+ 8%{content:"Desig|";}
+ 10%{content:"Design|";}
+ 12%{content:"Designe|";}
+ 14%{content:"Designer|";}
+ 16%{content:"Designer";}
+ 18%{content:"Designer|";}
+ 20%{content:"Designer";}
+ 22%{content:"Designe|";}
+ 24%{content:"Design|";}
+ 26%{content:"Desig|";}
+ 28%{content:"Desi|";}
+ 30%{content:"Des|";}
+ 32%{content:"De|";}
+ 34%{content:"Dev|";}
+ 36%{content:"Deve|";}
+ 38%{content:"Develo|";}
+ 40%{content:"Develop|";}
+ 42%{content:"Develope|";}
+ 44%{content:"Developer|";}
+ 46%{content:"Developer";}
+ 48%{content:"Developer|";}
+ 50%{content:"Develope";}
+ 51%{content:"Develop|";}
+ 52%{content:"Develo|";}
+ 53%{content:"Devel|";}
+ 54%{content:"Deve|";}
+ 55%{content:"Dev|";}
+ 56%{content:"De|";}
+ 57%{content:"D|";}
+ 58%{content:"|";}
+ 59%{content:"F|";}
+ 60%{content:"Fr|";}
+ 61%{content:"Fre|";}
+ 62%{content:"Free|";}
+ 63%{content:"Freel|";}
+ 64%{content:"Freela|";}
+ 65%{content:"Freelan|";}
+ 66%{content:"Freelanc|";}
+ 67%{content:"Freelance|";}
+ 68%{content:"Freelancer|";}
+ 69%{content:"Freelancer";}
+ 70%{content:"Freelancer|";}
+ 71%{content:"Freelance";}
+ 72%{content:"Freelanc|";}
+ 73%{content:"Freelan|";}
+ 74%{content:"Freela|";}
+ 75%{content:"Freel|";}
+ 76%{content:"Free|";}
+ 77%{content:"Fre|";}
+ 78%{content:"Fr|";}
+ 79%{content:"F|";}
+ 80%{content:"|";}
+ 81%{content:"P|";}
+ 82%{content:"Ph|";}
+ 83%{content:"Pho|";}
+ 84%{content:"Phot|";}
+ 85%{content:"Photo|";}
+ 86%{content:"Photog|";}
+ 87%{content:"Photogr|";}
+ 88%{content:"Photogra|";}
+ 89%{content:"Photograp|";}
+ 90%{content:"Photograph|";}
+ 91%{content:"Photographe|";}
+ 92%{content:"Photographer|";}
+ 93%{content:"Photograph|";}
+ 94%{content:"Photograp|";}
+ 95%{content:"Photogra|";}
+ 96%{content:"Photog|";}
+ 97%{content:"Photo|";}
+ 98%{content:"Pho|";}
+ 99%{content:"Ph|";}
+ 100%{content:"|";}
+}
+
+
+/* ABOUT SECTION */
+
+#about img{
+    width: 10.5rem;
+}
+
+
+.about-rht h2{
+    position: relative;
+}
+
+
+.about-rht h2::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    background-color:#0d6efd;
+    bottom: -20%;
+    left: 0;
+}
+
+
+/* SERVICE SECTION */
+
+
+
+.line{
+width: 40px;
+height: 5px;
+background-color: #0078ff;
+margin: 0 auto;
+}
+
+
+#service h3{
+    font-size: 3rem;
+}
+
+#service p{
+    font-size: 0.9rem;
+}
+
+
+.background i{
+    font-size: 2.3rem;
+    padding: 1.8rem;
+    border: 0.58rem solid #3191ff;
+    color: black;
+    transition: all 400ms;
+}
+
+.service-hover:hover i{
+    border: solid 0.58rem #91b7f0 ;
+    color: white;
+    background-color: #549df19a;
+}
+
+
+/* counter section */
+
+
+#counter{
+    background-image: url("../images/counters-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#counter .container-fluid{
+    background-color:rgba(0, 117, 250, 0.699);
+    width: 100%;
+    height: 100%;
+}
+
+#counter i{
+    font-size: 1.5rem;
+    padding:1.5rem;
+    border: 0.58rem solid #b1ceee;
+    color: white;
+    transition: all 400ms;
+}
+
+
+/* portfolio section */
+
+#portfolio span{
+    font-size: 0.8rem !important;
+}
+
+#portfolio .portfolio img{
+    transition: all;
+    transition-duration:1s ;
+}
+
+
+#portfolio .portfolio:hover img{
+    scale: 1.3;
+}
+
+#portfolio h3{
+    font-size: 3rem;
+}
+
+#portfolio p{
+    font-size: 0.9rem;
+}
+
+
+/* carousel section */
+
+#carousel{
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+#carousel .layer{
+    background-color:rgba(0, 117, 250, 0.699);
+    width: 100%;
+    height: 100%;
+}
+
+
+#carousel img{
+    height: 10rem;
+    width: 10rem;
+    }
+
+
+.carousel-indicators [data-bs-target] {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+
+    /* BLOG Section */
+
+    #blog h3{
+        font-size: 3rem;
+        transition: all 700ms;
+    }
+
+    #blog h3:hover{
+        color: #3191ff;
+        cursor: pointer;
+    }
+
+
+    #blog .blog-hover{
+        transition: all 700ms;
+    }
+
+    #blog .blog-hover:hover{
+        color: #3191ff;
+        cursor: pointer;
+    }
+
+
+
+    #blog p{
+        font-size: 0.9rem;
+    }
+
+    #blog .card-footer img{
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+    #blog button{
+     position: absolute;
+     font-size: 0.8rem;
+     top: 0;
+     left: 50%;
+    }
+
+
+/* contact styling */
+
+
+#contact{
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+#contact .contact-layer{
+    background-color:rgba(0, 117, 250, 0.699);
+    width: 100%;
+    height: 100%;
+}
+
+
+#contact h2{
+    position: relative;
+}
+
+
+#contact h2::after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 0.2rem;
+    background-color:#3b87fa;
+    bottom: -20%;
+    left: 0;
+}
+
+
+#contact button{
+    background-color:#0078ff;
+    border: #0078ff solid 3px;
+    transition: all 500ms;
+    padding: 0.4rem 1.3rem;
+}
+
+
+#contact button:hover{
+    border: #b5cff7 solid 3px;
+    background-color: #609df8;
+    padding: 0.4rem 1.3rem;
+    
+}
+
+
+#contact .icon-hover i{
+    transition: all 500ms;
+}
+
+
+
+#contact .icon-hover i:hover{
+ background-color: #0078ff;
+ color: white !important;
+ border: #b5cff7 solid 3px !important;
+}
